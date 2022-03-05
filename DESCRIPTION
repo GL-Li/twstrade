@@ -1,17 +1,28 @@
 Package: twstrade
-Title: An Amazing Shiny App
+Title: Technical Analysis of Stocks
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+Authors@R: person('Guanglai', 'Li', email = 'liguanglai@gmail.com', role = c('cre', 'aut'))
+Description: Analyze stocks using data feed from TWS or Yahoo Finance
+License: MIT + file LICENSE
 Imports: 
+    attempt,
     config (>= 0.3.1),
+    dplyr,
+    DT,
+    ggplot2,
+    glue,
     golem (>= 0.3.1),
-    shiny (>= 1.7.1)
+    htmltools,
+    processx,
+    shiny (>= 1.7.1),
+    tidyquant
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+URL: https://github.com/GL-Li/twstrade
+BugReports: https://github.com/GL-Li/twstrade/issues
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
