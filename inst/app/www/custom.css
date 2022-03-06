@@ -1,0 +1,18 @@
+#plot_stock_1-plot {
+  height:100vh !important;
+} 
+
+h2 {
+  color: blue;
+}
+
+
+/* may not show radio buttons in two columns. not show in RStudio Viewer but works in 
+web browser  */
+.buttons { 
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */ 
+  -moz-column-count: 2;    /* Firefox */ 
+  column-count: 2; 
+  -moz-column-fill: auto;
+  -column-fill: auto;
+} 

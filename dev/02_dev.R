@@ -16,17 +16,23 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package("dplyr")
+usethis::use_package("tidyr")
 usethis::use_package("ggplot2")
-usethis::use_package("tidyquant")
+usethis::use_package("stringr")
+usethis::use_package("tidyquant", "Depends")
+usethis::use_package("quantmod", "Depends")
+usethis::use_package("zoo")
+usethis::use_package("xts")
+usethis::use_package("PerformanceAnalytics")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "plot_stock" ) # Name of the module
+golem::add_module( name = "input_stock" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
-golem::add_fct( "helpers" ) 
+golem::add_fct("plot_momentum") 
 golem::add_utils( "helpers" )
 
 ## External resources

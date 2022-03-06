@@ -10,7 +10,14 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic 
     fluidPage(
-      h1("twstrade")
+      fluidRow(
+        column(10, 
+               
+               mod_plot_stock_ui("plot_stock_1")),
+        column(2,
+               h3("Watch List"),
+               mod_input_stock_ui("input_stock_1")) 
+      )
     )
   )
 }
@@ -28,7 +35,7 @@ golem_add_external_resources <- function(){
   add_resource_path(
     'www', app_sys('app/www')
   )
- 
+  
   tags$head(
     favicon(),
     bundle_resources(
