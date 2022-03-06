@@ -15,11 +15,12 @@ mod_input_stock_ui <- function(id){
       class = "buttons",
       radioButtons(ns("stock"), 
                    NULL, 
-                   choices = c("VLO", "MRO", "BTU", "CNQ", "CENX", "AA", "GNK", "SBLK", "LVS", 
-                               "WYNN", "SHAK", "CMG", "AEO", "LULU", "FOSL", "SIG", "CSIQ", 
-                               "RUN", "AMD", "MU", "PLUG", "FCEL", "RIOT", "COIN", "SQ", "UPST", 
-                               "FTCH", "OSTK", "DOCU", "ZM", "MRNA", "BNTX", "DKNG", "IONQ", 
-                               "BYND", "TSLA", "LAC"),
+                   choices = c("VLO", "MRO", "BTU", "CNQ", "CENX", "AA", "GNK", 
+                               "SBLK", "LVS", "WYNN", "SHAK", "CMG", "AEO", 
+                               "LULU", "FOSL", "SIG", "CSIQ", "RUN", "AMD", 
+                               "MU", "PLUG", "FCEL", "RIOT", "COIN", "SQ", 
+                               "UPST", "FTCH", "OSTK", "DOCU", "ZM", "MRNA", 
+                               "BNTX", "DKNG", "IONQ", "BYND", "TSLA", "LAC"),
                    selected = "VLO")
     )
   )
