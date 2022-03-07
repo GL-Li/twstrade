@@ -2,7 +2,7 @@ Package: twstrade
 Title: Technical Analysis of Stocks
 Version: 0.0.0.9000
 Authors@R: person('Guanglai', 'Li', email = 'liguanglai@gmail.com', role = c('cre', 'aut'))
-Description: Analyze stocks using data feed from TWS or Yahoo Finance
+Description: Analyze stocks using data feed from TWS or Yahoo Finance.
 License: MIT + file LICENSE
 Imports: 
     attempt,
@@ -13,11 +13,13 @@ Imports:
     glue,
     golem (>= 0.3.1),
     htmltools,
+    IBrokers,
     PerformanceAnalytics,
     processx,
     shiny (>= 1.7.1),
     stringr,
     tidyr,
+    TTR,
     xts,
     zoo
 Encoding: UTF-8

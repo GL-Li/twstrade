@@ -24,6 +24,8 @@ usethis::use_package("quantmod", "Depends")
 usethis::use_package("zoo")
 usethis::use_package("xts")
 usethis::use_package("PerformanceAnalytics")
+usethis::use_package("IBrokers")
+usethis::use_package("TTR")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
@@ -35,6 +37,10 @@ golem::add_module( name = "input_stock" ) # Name of the module
 golem::add_fct("plot_momentum") 
 golem::add_fct("download_stock")
 # golem::add_utils( "helpers" )
+
+
+## add files for globals and imports
+usethis::use_r("globals")
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
