@@ -1,8 +1,16 @@
 #' Follow short term trend after a price jump
 #'
 #' @param stocks vector of stock symbols such as c("C", "AAPL")
+#' @param source where is the data from, "yahoo" for Yahoo Finance or "tws" for
+#' for Interactive Brokers TWS. Need a account and data subscription for TWS.
+#' @param ema1 integer, short exponential moving average (EMA)
+#' @param ema2 middle EMA
+#' @param ema3 long EMA
+#' @param macd1 integer, MACD fast MA
+#' @param macd2 MACD slow MA
+#' @param macd3 MACD signal
 #' @param period number of days to look back
-#' @param description description of the chart, stock symbol by default
+#' @param zoom numeric scale of the MACD to display
 #'
 #' @export
 #'
@@ -36,6 +44,17 @@ plot_momentum <- function(stocks, source = "tws",
 
 #' Plot momentum of a stock
 #'
+#' @param symbol stock symbol such as "AAPL"
+#' @param source where is the data from, "yahoo" for Yahoo Finance or "tws" for
+#' for Interactive Brokers TWS. Need a account and data subscription for TWS.
+#' @param ema1 integer, short exponential moving average (EMA)
+#' @param ema2 middle EMA
+#' @param ema3 long EMA
+#' @param macd1 integer, MACD fast MA
+#' @param macd2 MACD slow MA
+#' @param macd3 MACD signal
+#' @param period number of days to look back
+#' @param zoom numeric scale of the MACD to display
 
 plot_momentum_ <- function(symbol, source = "tws",
                            ema1 = 5,

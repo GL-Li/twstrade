@@ -60,7 +60,7 @@ devtools::build_vignettes()
 usethis::use_coverage()
 
 # Create a summary readme for the testthat subdirectory
-covrpage::covrpage()
+# covrpage::covrpage()
 
 ## CI ----
 ## Use this part of the script if you need to set up a CI
@@ -74,8 +74,8 @@ usethis::use_github()
 # Chose one of the three
 # See https://usethis.r-lib.org/reference/use_github_action.html
 usethis::use_github_action_check_release() 
-usethis::use_github_action_check_standard() 
-usethis::use_github_action_check_full() 
+# usethis::use_github_action_check_standard() 
+# usethis::use_github_action_check_full() 
 # Add action for PR
 usethis::use_github_action_pr_commands()
 

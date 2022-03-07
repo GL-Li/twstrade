@@ -20,9 +20,24 @@ plot_momentum(
 \arguments{
 \item{stocks}{vector of stock symbols such as c("C", "AAPL")}
 
+\item{source}{where is the data from, "yahoo" for Yahoo Finance or "tws" for
+for Interactive Brokers TWS. Need a account and data subscription for TWS.}
+
+\item{ema1}{integer, short exponential moving average (EMA)}
+
+\item{ema2}{middle EMA}
+
+\item{ema3}{long EMA}
+
+\item{macd1}{integer, MACD fast MA}
+
+\item{macd2}{MACD slow MA}
+
+\item{macd3}{MACD signal}
+
 \item{period}{number of days to look back}
 
-\item{description}{description of the chart, stock symbol by default}
+\item{zoom}{numeric scale of the MACD to display}
 }
 \description{
 Follow short term trend after a price jump

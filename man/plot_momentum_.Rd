@@ -17,6 +17,28 @@ plot_momentum_(
   zoom = 0.3
 )
 }
+\arguments{
+\item{symbol}{stock symbol such as "AAPL"}
+
+\item{source}{where is the data from, "yahoo" for Yahoo Finance or "tws" for
+for Interactive Brokers TWS. Need a account and data subscription for TWS.}
+
+\item{ema1}{integer, short exponential moving average (EMA)}
+
+\item{ema2}{middle EMA}
+
+\item{ema3}{long EMA}
+
+\item{macd1}{integer, MACD fast MA}
+
+\item{macd2}{MACD slow MA}
+
+\item{macd3}{MACD signal}
+
+\item{period}{number of days to look back}
+
+\item{zoom}{numeric scale of the MACD to display}
+}
 \description{
 Plot momentum of a stock
 }
