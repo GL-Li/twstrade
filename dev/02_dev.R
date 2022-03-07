@@ -33,7 +33,8 @@ golem::add_module( name = "input_stock" ) # Name of the module
 ## Add helper functions ----
 ## Creates fct_* and utils_*
 golem::add_fct("plot_momentum") 
-golem::add_utils( "helpers" )
+golem::add_fct("download_stock")
+# golem::add_utils( "helpers" )
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
@@ -47,7 +48,7 @@ usethis::use_data_raw( name = "my_dataset", open = FALSE )
 
 ## Tests ----
 ## Add one line by test you want to create
-usethis::use_test( "app" )
+usethis::use_test("download_stock")
 
 # Documentation
 
